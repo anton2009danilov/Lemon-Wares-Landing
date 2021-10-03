@@ -1,0 +1,8 @@
+@import 'normalize';
+@import 'fonts';
+@import 'config';
+
+:root {
+	font-size: 16px;
+	font-family: $font-family-primary;
+}
