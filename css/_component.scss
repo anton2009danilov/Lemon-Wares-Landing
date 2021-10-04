@@ -1,0 +1,19 @@
+.header {
+	background: #f3f;
+}
+
+.main {
+	background: #50f;
+	flex: 1;
+
+	.main__section {
+		background: #fdfd04;
+		min-width: 100%;
+		min-height: 300px;
+	}
+}
+
+.footer {
+	min-height: 80px;
+	background: #6ad;
+}
