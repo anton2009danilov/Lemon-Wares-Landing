@@ -64,6 +64,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul {
@@ -424,7 +426,6 @@ template {
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +441,79 @@ body {
 }
 
 .header {
-  background: #f3f;
+  padding: 40px 0;
+  min-height: 60px;
+}
+
+.header .header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-right: 5%;
+  font-weight: 600;
+}
+
+.header .header__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 25%;
+}
+
+.header .header__link:hover::before, .header .header__link--selected::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 75%;
+  background: #B00000;
+  bottom: 0;
+}
+
+.header .header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px 25px;
+  position: relative;
+  color: #000;
+}
+
+.header .header__link:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.header .header__link--border-rigth {
+  border-right: 1px solid #DAD8D8;
 }
 
 .main {
@@ -459,5 +532,24 @@ body {
 .footer {
   min-height: 80px;
   background: #6ad;
+}
+
+.logo {
+  width: 92px;
+  height: 60px;
+}
+
+.logo:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.logo:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.phone-icon {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=main.css.map */
