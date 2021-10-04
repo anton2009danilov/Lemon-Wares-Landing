@@ -1,3 +1,4 @@
+@import url(../fontawesome/css/all.css);
 @font-face {
   font-family: "Poppins";
   font-style: normal;
@@ -492,6 +493,10 @@ body {
   bottom: 0;
 }
 
+.header .header__list-item--small-screen {
+  display: none;
+}
+
 .header .header__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,11 +539,6 @@ body {
   background: #6ad;
 }
 
-.logo {
-  width: 92px;
-  height: 60px;
-}
-
 .logo:hover {
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
@@ -549,7 +549,61 @@ body {
           transform: scale(0.99);
 }
 
+.logo .logo__img {
+  width: 92px;
+  height: 60px;
+}
+
 .phone-icon {
   margin-right: 8px;
+}
+
+.burger-btn {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.burger-btn i {
+  vertical-align: middle;
+}
+
+.burger-btn:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.burger-btn:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 1%;
+  }
+}
+
+@media (max-width: 920px) {
+  .header .header__list-item--small-screen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .header .header__list-item--big-screen {
+    display: none;
+  }
+  .header .logo + .header__link {
+    display: none;
+  }
+  .header .header__nav-list {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
