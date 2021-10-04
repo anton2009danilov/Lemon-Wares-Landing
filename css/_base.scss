@@ -1,3 +1,39 @@
+@mixin font-face($family, $weight, $path, $style: normal) {
+	@font-face {
+		font-family: $family;
+		font-style: $style;
+		font-weight: $weight;
+		src: url($path);
+	}
+}
+
+// Poppins font-family
+@include font-face("Poppins", 300, "../fonts/Poppins/Poppins-Light.ttf");
+@include font-face("Poppins", 400, "../fonts/Poppins/Poppins-Regular.ttf");
+@include font-face("Poppins", 500, "../fonts/Poppins/Poppins-Medium.ttf");
+@include font-face("Poppins", 600, "../fonts/Poppins/Poppins-SemiBold.ttf");
+@include font-face("Poppins", 700, "../fonts/Poppins/Poppins-Bold.ttf");
+
+// Inter font-family
+@include font-face("Inter", 400, "../fonts/Inter/Inter-Regular.ttf");
+@include font-face("Inter", 500, "../fonts/Inter/Inter-Medium.ttf");
+@include font-face("Inter", 700, "../fonts/Inter/Inter-Bold.ttf");
+@include font-face("Inter", 800, "../fonts/Inter/Inter-ExtraBold.ttf");
+
+// Variables
+$font-family-primary: "Poppins",
+sans-serif;
+$font-family-secondary: "Inter",
+sans-serif;
+
+$primary-color: #fff;
+$secondary-color: #000;
+$grey-light-color: #2E2E2E;
+$grey-color: #18191F;
+$silver-color: #808080;
+$red-color: #B00000;
+
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
