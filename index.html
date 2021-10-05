@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/main.css">
+	<script src="./js/script.js" defer></script>
 	<title>Lemon Wares</title>
 </head>
 
@@ -33,9 +34,34 @@
 						</a>
 					</li>
 					<li class="header__list-item header__list-item--small-screen">
-						<button class="burger-btn">
-							<i class="fas fa-bars"></i>
-						</button>
+						<div class="burger">
+							<button class="burger__btn" id="burger-btn">
+								<i class="fas fa-bars"></i>
+							</button>
+							<ul class="burger__menu d-none" id="burger-menu">
+								<li class="burger__item">
+									<a href="#" class="burger__link">Our Services</a>
+								</li>
+								<li class="burger__item ">
+									<a href="#" class="burger__link">About</a>
+								</li>
+								<li class="burger__item">
+									<a href="#" class="burger__link">Blog&amp;News</a>
+								</li>
+								<li class="burger__item">
+									<a href="#" class="burger__link">Contact</a>
+								</li>
+								<li class="burger__item">
+									<a href="#" class="burger__link">Account</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="header__list-item header__list-item--small-screen">
+						<a href="#" class="header__link">
+							<img src="./img/phone.svg" alt="phone icon" class="phone-icon">
+							+2349067322844
+						</a>
 					</li>
 				</ul>
 
