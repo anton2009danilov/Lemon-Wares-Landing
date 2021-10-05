@@ -605,6 +605,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
+  z-index: 10;
 }
 
 @media (max-width: 1240px) {
@@ -641,6 +642,9 @@ body {
   }
   .header .header__nav-list .header__list-item:last-of-type {
     margin: 0 auto;
+  }
+  .burger .burger__menu {
+    right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
