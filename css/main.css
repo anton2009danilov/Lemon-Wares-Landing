@@ -681,7 +681,7 @@ body {
 }
 
 .hero .hero__subtitle {
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   line-height: 1.75;
   letter-spacing: 0.05em;
@@ -730,6 +730,104 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 16px;
+}
+
+.why-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.why-us .why-us__text-block {
+  font-family: "Inter", sans-serif;
+  color: #18191F;
+  width: 45%;
+}
+
+.why-us .why-us__title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.why-us .why-us__description {
+  font-size: 1.125rem;
+  line-height: 1.78;
+}
+
+.why-us .why-us__technologies {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.why-us .why-us__technologies .why-us__tech {
+  width: 172px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.why-us .why-us__benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.why-us .why-us__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 272px;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}
+
+.why-us .why-us__card .why-us__card-img {
+  max-width: 100px;
+  margin-bottom: 17px;
+}
+
+.why-us .why-us__card .why-us__card-title {
+  margin-bottom: 7px;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.why-us .why-us__card .why-us__card-text {
+  font-size: .75rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 @media (max-width: 1240px) {
