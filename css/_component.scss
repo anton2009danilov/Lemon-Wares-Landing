@@ -230,10 +230,90 @@
 }
 
 .pricing {
+	.pricing__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+	}
 
-	.pricing__options {
+	.pricing__title {
+		font-size: 3.125rem;
+		line-height: 1.2;
+		font-weight: 600;
+		max-width: 650px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.pricing__subtitle {
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.pricing__payment-period {
+		margin-bottom: 60px;
+	}
+
+	.pricing__payment-period-label {
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+
+	.pricing__discount {
+		font-size: .625rem;
+		background-color: $yellow-color;
+		vertical-align: middle;
+		padding: 7px 8px;
+		border-radius: 8px;
+	}
+
+	.pricing__payment-type {
+		display: flex;
+		justify-content: space-evenly;
+		width: 80%;
+		position: relative;
+
+		&::before {
+			@extend %link-underline;
+			width: 100%;
+			background-color: $silver-medium-color;
+		}
+
+		.pricing__payment-type-label {
+			position: relative;
+			display: inline-block;
+			width: 49%;
+			text-align: center;
+			font-size: 1.875rem;
+			cursor: pointer;
+
+			&:hover::before {
+				@extend %link-underline;
+				width: 100%;
+			}
+
+			&:active {
+				transform: scale(.99);
+			}
+		}
+
+		.pricing__package-type-option {
+			appearance: none;
+			width: 1px;
+			height: 1px;
+		}
+	}
+
+
+	.pricing__fee-options {
 		display: flex;
 	}
+}
+
+.toggle-btn {
+	cursor: pointer;
 }
 
 @media (max-width: 1240px) {

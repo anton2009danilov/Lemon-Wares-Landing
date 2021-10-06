@@ -81,7 +81,7 @@
           transform: scale(0.99);
 }
 
-.header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before {
+.header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before, .pricing .pricing__payment-type::before, .pricing .pricing__payment-type .pricing__payment-type-label:hover::before {
   display: block;
   content: "";
   position: absolute;
@@ -830,10 +830,102 @@ body {
   line-height: 1.5;
 }
 
-.pricing .pricing__options {
+.pricing .pricing__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.pricing .pricing__title {
+  font-size: 3.125rem;
+  line-height: 1.2;
+  font-weight: 600;
+  max-width: 650px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pricing .pricing__subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing .pricing__payment-period {
+  margin-bottom: 60px;
+}
+
+.pricing .pricing__payment-period-label {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.pricing .pricing__discount {
+  font-size: .625rem;
+  background-color: #FFE87A;
+  vertical-align: middle;
+  padding: 7px 8px;
+  border-radius: 8px;
+}
+
+.pricing .pricing__payment-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 80%;
+  position: relative;
+}
+
+.pricing .pricing__payment-type::before {
+  width: 100%;
+  background-color: #C4C4C4;
+}
+
+.pricing .pricing__payment-type .pricing__payment-type-label {
+  position: relative;
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  font-size: 1.875rem;
+  cursor: pointer;
+}
+
+.pricing .pricing__payment-type .pricing__payment-type-label:hover::before {
+  width: 100%;
+}
+
+.pricing .pricing__payment-type .pricing__payment-type-label:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.pricing .pricing__payment-type .pricing__package-type-option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1px;
+  height: 1px;
+}
+
+.pricing .pricing__fee-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toggle-btn {
+  cursor: pointer;
 }
 
 @media (max-width: 1240px) {
