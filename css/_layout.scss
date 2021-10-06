@@ -17,3 +17,64 @@ body {
 .d-none {
 	display: none !important;
 }
+
+.header {
+	padding: 10px 0;
+	min-height: 60px;
+
+	.header__navigation {
+		display: flex;
+		align-items: center;
+	}
+
+	.header__nav-list {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding-right: 5%;
+		font-weight: 600;
+	}
+
+	.header__list-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 65px;
+		min-width: 25%;
+		white-space: nowrap;
+	}
+
+	.header__list-item--small-screen {
+		display: none;
+	}
+
+	.header__link {
+		@extend %link-style;
+		color: $secondary-color;
+
+		&:hover::before {
+			@extend %link-underline;
+		}
+	}
+
+	.header__link--border-rigth {
+		border-right: 1px solid $silver-light-color;
+	}
+
+	.header__link--selected::before {
+		@extend %link-underline;
+	}
+}
+
+.main {
+	flex: 1;
+
+	.main__section {
+		padding: 40px 0;
+	}
+}
+
+.footer {
+	min-height: 80px;
+	background: #6ad;
+}

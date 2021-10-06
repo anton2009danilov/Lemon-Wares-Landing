@@ -34,6 +34,39 @@ $silver-color: #808080;
 $silver-light-color: #DAD8D8;
 $red-color: #B00000;
 
+%link-style {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6px 25px;
+	position: relative;
+
+	&:active {
+		transform: scale(.99);
+	}
+}
+
+%link-underline {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	width: 75%;
+	background: $red-color;
+	bottom: 0;
+}
+
+%btn-style {
+	&:active {
+		transform: scale(.99);
+	}
+
+	&:hover {
+		filter: brightness(.95);
+	}
+}
 
 // Styles reset
 * {

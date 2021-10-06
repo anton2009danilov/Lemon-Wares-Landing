@@ -62,6 +62,48 @@
   src: url("../fonts/Inter/Inter-ExtraBold.ttf");
 }
 
+.header .header__link, .header .burger .burger__link, .burger .header .burger__link, .hero .hero__nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6px 25px;
+  position: relative;
+}
+
+.header .header__link:active, .header .burger .burger__link:active, .burger .header .burger__link:active, .hero .hero__nav-link:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  width: 75%;
+  background: #B00000;
+  bottom: 0;
+}
+
+.hero .hero__btn:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+.hero .hero__btn:hover {
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -445,50 +487,8 @@ body {
   display: none !important;
 }
 
-.header .header__link, .header .burger .burger__link, .burger .header .burger__link, .hero .hero__nav-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 6px 25px;
-  position: relative;
-}
-
-.header .header__link:active, .header .burger .burger__link:active, .burger .header .burger__link:active, .hero .hero__nav-link:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-}
-
-.header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  height: 2px;
-  width: 75%;
-  background: #B00000;
-  bottom: 0;
-}
-
-.hero .hero__btn:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-}
-
-.hero .hero__btn:hover {
-  -webkit-filter: brightness(0.95);
-          filter: brightness(0.95);
-}
-
 .header {
-  padding: 40px 0;
+  padding: 10px 0;
   min-height: 60px;
 }
 
@@ -544,6 +544,10 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.main .main__section {
+  padding: 40px 0;
 }
 
 .footer {
