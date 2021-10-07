@@ -1006,6 +1006,72 @@ body {
   left: 5px;
 }
 
+.testimonials {
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.testimonials .testimonials__background-img {
+  position: absolute;
+  max-width: 142px;
+  opacity: .4;
+  top: 0;
+  left: 2%;
+}
+
+.testimonials .testimonials__users-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonials .testimonials__header {
+  margin: 15px 15px 15px 10%;
+  color: #18191F;
+}
+
+.testimonials .testimonials__header .testimonials__title {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.33;
+  max-width: 445px;
+}
+
+.testimonials .testimonials__header .testimonials__subtitle {
+  font-size: 1.125rem;
+}
+
+.testimonials .testimonials__card {
+  max-width: 445px;
+  padding: 32px 32px 32px 64px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  margin: 15px;
+}
+
+.testimonials .testimonials__card-text {
+  line-height: 2;
+  margin-bottom: 24px;
+}
+
+.testimonials .testimonials__card-author {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #18191F;
+}
+
+.testimonials .testimonials__card-author span {
+  display: block;
+  color: #969BAB;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
 .toggle-btn {
   cursor: pointer;
 }
