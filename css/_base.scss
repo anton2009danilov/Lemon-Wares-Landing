@@ -61,6 +61,15 @@ $yellow-color:#FFE87A;
 }
 
 %btn-style {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 14px;
+	font-size: .875rem;
+	border-radius: 8px;
+	white-space: nowrap;
+	background-color: $primary-color;
+
 	&:active {
 		transform: scale(.99);
 	}

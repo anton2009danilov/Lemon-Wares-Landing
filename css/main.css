@@ -94,12 +94,29 @@
   bottom: 0;
 }
 
-.hero .hero__btn:active {
+.hero .hero__btn, .pricing .pricing__card-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 14px;
+  font-size: .875rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+.hero .hero__btn:active, .pricing .pricing__card-btn:active {
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
 }
 
-.hero .hero__btn:hover {
+.hero .hero__btn:hover, .pricing .pricing__card-btn:hover {
   -webkit-filter: brightness(0.95);
           filter: brightness(0.95);
 }
@@ -696,25 +713,11 @@ body {
   margin-top: 60px;
 }
 
-.hero .hero__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 15px 14px;
-  font-size: .875rem;
-  border-radius: 8px;
-  white-space: nowrap;
-}
-
 .hero .hero__btn--create-account {
   color: #fff;
   background-color: #B00000;
+  -webkit-box-shadow: 0px 0px 64px rgba(176, 0, 0, 0.3);
+          box-shadow: 0px 0px 64px rgba(176, 0, 0, 0.3);
   margin-right: 24px;
 }
 
@@ -888,6 +891,7 @@ body {
 }
 
 .pricing .pricing__payment-type::before {
+  height: 4px;
   width: 100%;
   background-color: #C4C4C4;
 }
@@ -902,6 +906,7 @@ body {
 }
 
 .pricing .pricing__payment-type .pricing__payment-type-label:hover::before {
+  height: 4px;
   width: 100%;
 }
 
@@ -922,6 +927,83 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing .pricing__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+  min-height: 716px;
+  padding: 30px 25px;
+  border: 1.5px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.pricing .pricing__card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.pricing .pricing__card-description {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.pricing .pricing__card-price {
+  font-size: 2.625rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.pricing .pricing__card-price span {
+  display: block;
+  font-size: .875rem;
+}
+
+.pricing .pricing__card-btn {
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 12px;
+  margin-bottom: 35px;
+}
+
+.pricing .pricing__card-benefit {
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: #808080;
+  margin: 12px 0;
+  padding-left: 50px;
+  position: relative;
+}
+
+.pricing .pricing__card-benefit::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 14px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  position: absolute;
+  left: 5px;
 }
 
 .toggle-btn {

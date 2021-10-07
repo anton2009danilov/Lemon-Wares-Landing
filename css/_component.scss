@@ -131,17 +131,11 @@
 
 	.hero__btn {
 		@extend %btn-style;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 15px 14px;
-		font-size: .875rem;
-		border-radius: 8px;
-		white-space: nowrap;
 
 		&--create-account {
 			color: $primary-color;
 			background-color: $red-color;
+			box-shadow: 0px 0px 64px rgba(176, 0, 0, 0.3);
 			margin-right: 24px;
 		}
 
@@ -277,6 +271,7 @@
 
 		&::before {
 			@extend %link-underline;
+			height: 4px;
 			width: 100%;
 			background-color: $silver-medium-color;
 		}
@@ -291,6 +286,7 @@
 
 			&:hover::before {
 				@extend %link-underline;
+				height: 4px;
 				width: 100%;
 			}
 
@@ -309,6 +305,75 @@
 
 	.pricing__fee-options {
 		display: flex;
+		justify-content: space-between;
+	}
+
+	.pricing__card {
+		display: flex;
+		flex-direction: column;
+		max-width: 300px;
+		min-height: 716px;
+		padding: 30px 25px;
+		border: 1.5px solid #C4C4C4;
+		box-sizing: border-box;
+		box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 15px;
+	}
+
+	.pricing__card-title {
+		font-size: 1.75rem;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+
+	.pricing__card-description {
+		font-size: 0.75rem;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+
+	.pricing__card-price {
+		font-size: 2.625rem;
+		font-weight: 600;
+		margin-bottom: 35px;
+
+		span {
+			display: block;
+			font-size: .875rem;
+		}
+	}
+
+	.pricing__card-btn {
+		@extend %btn-style;
+
+		font-weight: 600;
+		color: $secondary-color;
+		background-color: $primary-color;
+		border: 2px solid $secondary-color;
+		border-radius: 12px;
+		margin-bottom: 35px;
+	}
+
+	.pricing__card-benefit {
+		font-weight: 700;
+		font-family: $font-family-secondary;
+		line-height: 1.5;
+		color: $silver-color;
+		margin: 12px 0;
+		padding-left: 50px;
+		position: relative;
+
+		&::before {
+			display: inline-block;
+			content: "";
+			width: 8px;
+			height: 14px;
+			transform: rotate(45deg);
+			border-bottom: 2px solid $secondary-color;
+			border-right: 2px solid $secondary-color;
+			position: absolute;
+			left: 5px;
+		}
 	}
 }
 
