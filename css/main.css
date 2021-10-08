@@ -1040,8 +1040,8 @@ body {
   position: absolute;
   left: -95px;
   top: -57px;
-  -webkit-filter: opacity(0.4);
-          filter: opacity(0.4);
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
 }
 
 .testimonials .testimonials__header .testimonials__title {
