@@ -1026,11 +1026,28 @@ body {
 
 .testimonials .testimonials__header {
   position: relative;
-  margin: 15px 15px 15px 10%;
+  margin: 15px 15px 15px 0;
   color: #18191F;
+  max-width: 445px;
 }
 
-.testimonials .testimonials__header::before {
+.testimonials .testimonials__header .testimonials__title {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.33;
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonials__header .testimonials__subtitle {
+  font-size: 1.125rem;
+  line-height: 1.78;
+}
+
+.testimonials .testimonials__header--first {
+  margin-left: 10%;
+}
+
+.testimonials .testimonials__header--first::before {
   display: block;
   content: "";
   width: 142px;
@@ -1042,17 +1059,6 @@ body {
   top: -57px;
   -webkit-filter: opacity(0.3);
           filter: opacity(0.3);
-}
-
-.testimonials .testimonials__header .testimonials__title {
-  font-weight: 800;
-  font-size: 3rem;
-  line-height: 1.33;
-  max-width: 445px;
-}
-
-.testimonials .testimonials__header .testimonials__subtitle {
-  font-size: 1.125rem;
 }
 
 .testimonials .testimonials__card {
@@ -1106,6 +1112,31 @@ body {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 5px;
+}
+
+.testimonials .testimonials__our-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonials .testimonials__clients-logotypes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 554px;
+}
+
+.testimonials .testimonials__clients-logotypes .client-logo {
+  max-width: 120px;
+  margin-left: 64px;
 }
 
 .toggle-btn {
