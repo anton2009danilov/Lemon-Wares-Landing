@@ -495,7 +495,50 @@
 	}
 }
 
+.call-to-action {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
+	.call-to-action__content {
+		padding: 90px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 96%;
+		min-height: 432px;
+		background-color: $cta-bg-color;
+		border-radius: 16px;
+	}
+
+	.call-to-action__title {
+		font-size: 4rem;
+		text-align: center;
+		line-height: 1.37;
+	}
+
+	.call-to-action__btn {
+		@extend %btn-style;
+
+		position: relative;
+		font-size: 0.875rem;
+		padding: 2px 16px 2px 50px;
+		color: $primary-color;
+		background-color: $red-color;
+
+		&::before {
+			display: block;
+			content: '';
+			width: 22px;
+			height: 22px;
+			background-image: url(../img/phone-in-speach-balloon.png);
+			background-size: cover;
+			position: absolute;
+			left: 18px;
+		}
+	}
+}
 
 .toggle-btn {
 	cursor: pointer;

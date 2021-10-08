@@ -94,7 +94,7 @@
   bottom: 0;
 }
 
-.hero .hero__btn, .pricing .pricing__card-btn {
+.hero .hero__btn, .pricing .pricing__card-btn, .call-to-action .call-to-action__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,12 +111,12 @@
   background-color: #fff;
 }
 
-.hero .hero__btn:active, .pricing .pricing__card-btn:active {
+.hero .hero__btn:active, .pricing .pricing__card-btn:active, .call-to-action .call-to-action__btn:active {
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
 }
 
-.hero .hero__btn:hover, .pricing .pricing__card-btn:hover {
+.hero .hero__btn:hover, .pricing .pricing__card-btn:hover, .call-to-action .call-to-action__btn:hover {
   -webkit-filter: brightness(0.95);
           filter: brightness(0.95);
 }
@@ -1137,6 +1137,60 @@ body {
 .testimonials .testimonials__clients-logotypes .client-logo {
   max-width: 120px;
   margin-left: 64px;
+}
+
+.call-to-action {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.call-to-action .call-to-action__content {
+  padding: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 96%;
+  min-height: 432px;
+  background-color: #F7FAFE;
+  border-radius: 16px;
+}
+
+.call-to-action .call-to-action__title {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.37;
+}
+
+.call-to-action .call-to-action__btn {
+  position: relative;
+  font-size: 0.875rem;
+  padding: 2px 16px 2px 50px;
+  color: #fff;
+  background-color: #B00000;
+}
+
+.call-to-action .call-to-action__btn::before {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/phone-in-speach-balloon.png);
+  background-size: cover;
+  position: absolute;
+  left: 18px;
 }
 
 .toggle-btn {
