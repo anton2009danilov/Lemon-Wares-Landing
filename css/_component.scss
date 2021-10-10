@@ -501,6 +501,25 @@
 	justify-content: center;
 	align-items: center;
 
+	.call-to-action__bg-img {
+		position: absolute;
+
+		&--top {
+			top: 40px;
+			left: 33%;
+		}
+
+		&--left {
+			top: 70%;
+			left: 5px;
+		}
+
+		&--right {
+			top: 70%;
+			right: 5px;
+		}
+	}
+
 	.call-to-action__content {
 		padding: 90px;
 		display: flex;
