@@ -1,4 +1,6 @@
 @import url(../fontawesome/css/all.css);
+@import url(../libraries/normalize.css);
+@import url(../libraries/fontawesome/css/all.min.css);
 @font-face {
   font-family: "Poppins";
   font-style: normal;
