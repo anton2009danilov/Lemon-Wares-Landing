@@ -30,6 +30,7 @@ $font-family-secondary: "Inter",
 sans-serif;
 
 $primary-color: #fff;
+$primary-color--dark: #e5e5e5;
 $secondary-color: #000;
 $grey-color: #18191F;
 $grey-medium-color: #969BAB;
@@ -96,6 +97,7 @@ ul {
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }
 
