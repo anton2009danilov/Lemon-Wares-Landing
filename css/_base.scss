@@ -1,3 +1,6 @@
+@import url(../libraries/normalize.css);
+@import url(../libraries/fontawesome/css/all.min.css);
+
 @mixin font-face($family, $weight, $path, $style: normal) {
 	@font-face {
 		font-family: $family;
