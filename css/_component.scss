@@ -597,9 +597,16 @@
 			flex-wrap: wrap;
 
 			.header__list-item:last-of-type {
-				margin: 0 auto;
-				// border: 1px solid red !important;
+				margin: 0;
 			}
+		}
+
+		.phone-icon {
+			height: 32px;
+		}
+
+		.header__phone-number {
+			display: none;
 		}
 	}
 
