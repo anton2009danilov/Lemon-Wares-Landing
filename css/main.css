@@ -1073,7 +1073,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 720px;
+  max-height: 800px;
 }
 
 .testimonials .testimonials__header {
@@ -1096,7 +1096,8 @@ body {
 }
 
 .testimonials .testimonials__header--first {
-  margin-left: 10%;
+  margin-left: 100px;
+  width: 40%;
 }
 
 .testimonials .testimonials__header--first::before {
@@ -1121,6 +1122,7 @@ body {
           box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 8px;
   margin: 15px;
+  width: 38%;
 }
 
 .testimonials .testimonials__card--first {
@@ -1175,6 +1177,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 70px;
 }
 
 .testimonials .testimonials__clients-logotypes {
@@ -1183,7 +1186,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 554px;
+  width: 48%;
+  max-width: 580px;
 }
 
 .testimonials .testimonials__clients-logotypes .client-logo {
@@ -1293,6 +1297,30 @@ body {
   .header .header__nav-list {
     padding: 0;
   }
+  .testimonials .testimonials__header--first {
+    width: 75%;
+  }
+  .testimonials .testimonials__header--second {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .testimonials .testimonials__users-feedback {
+    max-height: none;
+  }
+  .testimonials .testimonials__card {
+    max-width: none;
+    width: 75%;
+  }
+  .testimonials .testimonials__card--second {
+    margin-top: 15px;
+  }
+  .testimonials .testimonials__card--third {
+    margin-left: auto;
+  }
+  .testimonials .testimonials__clients-logotypes {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1311,6 +1339,20 @@ body {
   }
   .burger .burger__menu {
     right: 0;
+  }
+  .testimonials .testimonials__header--first {
+    width: 100%;
+    margin-left: 0;
+  }
+  .testimonials .testimonials__header--first::before {
+    left: 0;
+  }
+  .testimonials .testimonials__header .testimonials__title {
+    font-size: 2.5rem;
+  }
+  .testimonials .testimonials__card {
+    width: 95%;
+    margin: 15px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
