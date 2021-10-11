@@ -75,6 +75,45 @@ body {
 }
 
 .footer {
+	font-family: $font-family-secondary;
+	color: $primary-color;
+	padding: 64px 20px 80px;
 	min-height: 80px;
-	background: #6ad;
+	background: $red-color;
+
+	.footer__about-company {
+		max-width: 296px;
+	}
+
+	.footer__about-company-text {
+		line-height: 2;
+	}
+
+	.footer__logo {
+		display: block;
+		margin-bottom: 16px;
+	}
+
+	.footer__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		color: $primary-color--dark;
+		margin-bottom: 96px;
+	}
+
+	.footer__links-block {
+		display: flex;
+		flex-direction: column;
+		padding: 8px;
+		margin-top: 16px;
+	}
+
+	.footer__links-block-header {
+		font-size: 1rem;
+	}
+
+	.footer__link {
+		margin-top: 35px;
+	}
 }

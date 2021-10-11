@@ -135,6 +135,7 @@ ul {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -570,8 +571,57 @@ body {
 }
 
 .footer {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  padding: 64px 20px 80px;
   min-height: 80px;
-  background: #6ad;
+  background: #B00000;
+}
+
+.footer .footer__about-company {
+  max-width: 296px;
+}
+
+.footer .footer__about-company-text {
+  line-height: 2;
+}
+
+.footer .footer__logo {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #e6e6e6;
+  margin-bottom: 96px;
+}
+
+.footer .footer__links-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+.footer .footer__links-block-header {
+  font-size: 1rem;
+}
+
+.footer .footer__link {
+  margin-top: 35px;
 }
 
 .logo:hover {
