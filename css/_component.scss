@@ -61,6 +61,10 @@
 .hero {
 	display: flex;
 
+	.hero__content {
+		max-width: 50%;
+	}
+
 	.hero__nav-list {
 		display: flex;
 		position: relative;
@@ -127,6 +131,8 @@
 	.hero__btns-container {
 		display: flex;
 		margin-top: 60px;
+		max-width: 340px;
+		justify-content: space-between;
 	}
 
 	.hero__btn {

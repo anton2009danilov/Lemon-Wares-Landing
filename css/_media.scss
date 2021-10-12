@@ -25,6 +25,12 @@
 		}
 	}
 
+	.hero {
+		.hero__title {
+			font-size: 3rem;
+		}
+	}
+
 	.testimonials {
 
 		.testimonials__header {
@@ -64,6 +70,29 @@
 	}
 }
 
+@media (max-width: 720px) {
+	.hero {
+
+		.hero__title {
+			font-size: 2.5rem;
+			max-width: 470px;
+		}
+
+		.hero__content {
+			max-width: 90%;
+			margin: 0 auto;
+		}
+
+		.hero__btns-container {
+			margin-top: 40px;
+		}
+
+		.hero__img {
+			display: none;
+		}
+	}
+}
+
 @media (max-width: 480px) {
 	.header {
 		.header__nav-list {
@@ -86,6 +115,18 @@
 	.burger {
 		.burger__menu {
 			right: 0;
+		}
+	}
+
+	.hero {
+
+		.hero__btns-container {
+			max-width: 280px;
+		}
+
+		.hero__btn {
+			font-size: .7rem;
+			padding: 15px 10px;
 		}
 	}
 

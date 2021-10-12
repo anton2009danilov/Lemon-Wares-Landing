@@ -698,6 +698,10 @@ body {
   display: flex;
 }
 
+.hero .hero__content {
+  max-width: 50%;
+}
+
 .hero .hero__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -768,6 +772,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
+  max-width: 340px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero .hero__btn--create-account {
@@ -1302,6 +1310,9 @@ body {
   .header .header__nav-list {
     padding: 0;
   }
+  .hero .hero__title {
+    font-size: 3rem;
+  }
   .testimonials .testimonials__header--first {
     width: 75%;
   }
@@ -1328,6 +1339,23 @@ body {
   }
 }
 
+@media (max-width: 720px) {
+  .hero .hero__title {
+    font-size: 2.5rem;
+    max-width: 470px;
+  }
+  .hero .hero__content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .hero .hero__btns-container {
+    margin-top: 40px;
+  }
+  .hero .hero__img {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .header .header__nav-list {
     -ms-flex-wrap: wrap;
@@ -1344,6 +1372,13 @@ body {
   }
   .burger .burger__menu {
     right: 0;
+  }
+  .hero .hero__btns-container {
+    max-width: 280px;
+  }
+  .hero .hero__btn {
+    font-size: .7rem;
+    padding: 15px 10px;
   }
   .testimonials .testimonials__header--first {
     width: 100%;
