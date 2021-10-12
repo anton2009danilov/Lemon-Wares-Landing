@@ -693,9 +693,40 @@ body {
 }
 
 .hero {
+  position: relative;
+}
+
+.hero .hero__slides-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  max-height: 600px;
+}
+
+.hero .hero__slide {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+}
+
+.hero .hero__slide--domain {
+  background-color: rgba(241, 116, 116, 0.1);
+}
+
+.hero .hero__slide--seo {
+  background-color: rgba(172, 250, 127, 0.1);
+}
+
+.hero .hero__slide--email {
+  background-color: rgba(129, 138, 252, 0.1);
+}
+
+.hero .hero__navigation {
+  position: absolute;
 }
 
 .hero .hero__content {
