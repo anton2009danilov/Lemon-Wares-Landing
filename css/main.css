@@ -732,6 +732,16 @@ body {
 
 .hero .hero__content {
   max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero .hero__nav-list {
@@ -798,13 +808,13 @@ body {
   letter-spacing: 0.05em;
   color: #808080;
   max-width: 448px;
+  padding-bottom: 40px;
 }
 
 .hero .hero__btns-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
   max-width: 340px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -830,6 +840,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  max-height: 75vh;
   margin-top: 16px;
 }
 
