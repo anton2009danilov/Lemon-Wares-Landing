@@ -8,7 +8,6 @@ window.onload = () => {
 	heroSlider.scrollLeft = heroSliderWidth;
 
 	document.body.addEventListener('click', (e) => {
-		console.log(e.target);
 
 		if (e.target.id === 'burger-btn' || e.target.parentNode.id === 'burger-btn') {
 			burgerMenu.classList.toggle('d-none');
@@ -31,6 +30,22 @@ window.onload = () => {
 			}
 
 
+		}
+
+		if (e.target.id === 'payment-period-toggle-btn') {
+			const paymentToggleBtn = e.target;
+			const monthlyPayment = document.getElementById('monthly-payment');
+			const yearlyPayment = document.getElementById('yearly-payment');
+
+			paymentToggleBtn.classList.toggle('toggle-btn--on');
+
+			if (paymentToggleBtn.classList.contains('toggle-btn--on')) {
+				monthlyPayment.checked = false;
+				yearlyPayment.checked = true;
+			} else {
+				monthlyPayment.checked = true;
+				yearlyPayment.checked = false;
+			}
 		}
 
 	});
