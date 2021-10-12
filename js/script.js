@@ -48,6 +48,16 @@ window.onload = () => {
 			}
 		}
 
+		if (e.target.id === 'monthly-payment-label') {
+			const paymentToggleBtn = document.getElementById('payment-period-toggle-btn');
+			paymentToggleBtn.classList.remove('toggle-btn--on');
+		}
+
+		if (e.target.id === 'yearly-payment-label') {
+			const paymentToggleBtn = document.getElementById('payment-period-toggle-btn');
+			paymentToggleBtn.classList.add('toggle-btn--on');
+		}
+
 	});
 
 }
