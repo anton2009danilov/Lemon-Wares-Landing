@@ -1039,6 +1039,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .pricing .pricing__card {
@@ -1050,6 +1052,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 300px;
+  width: 30%;
   min-height: 716px;
   padding: 30px 25px;
   border: 1.5px solid #C4C4C4;
@@ -1058,6 +1061,7 @@ body {
   -webkit-box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
+  margin: 10px;
 }
 
 .pricing .pricing__card-title {
@@ -1356,6 +1360,12 @@ body {
   }
   .hero .hero__title {
     font-size: 3rem;
+  }
+  .pricing .pricing__card {
+    width: 52%;
+    max-width: none;
+    min-width: 300px;
+    margin: 15px auto;
   }
   .testimonials .testimonials__header--first {
     width: 75%;

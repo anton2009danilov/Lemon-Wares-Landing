@@ -31,6 +31,15 @@
 		}
 	}
 
+	.pricing {
+		.pricing__card {
+			width: 52%;
+			max-width: none;
+			min-width: 300px;
+			margin: 15px auto;
+		}
+	}
+
 	.testimonials {
 
 		.testimonials__header {

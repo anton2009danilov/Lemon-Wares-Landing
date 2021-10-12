@@ -347,18 +347,21 @@
 	.pricing__fee-options {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	.pricing__card {
 		display: flex;
 		flex-direction: column;
 		max-width: 300px;
+		width: 30%;
 		min-height: 716px;
 		padding: 30px 25px;
 		border: 1.5px solid #C4C4C4;
 		box-sizing: border-box;
 		box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 15px;
+		margin: 10px;
 	}
 
 	.pricing__card-title {
