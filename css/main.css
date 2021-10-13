@@ -1044,19 +1044,21 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 1px;
-  height: 1px;
 }
 
 .pricing .pricing__fee-options {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.pricing .pricing__fee-options--selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .pricing .pricing__card {

@@ -37,25 +37,46 @@ window.onload = () => {
 			const monthlyPayment = document.getElementById('monthly-payment');
 			const yearlyPayment = document.getElementById('yearly-payment');
 
+			const monthFeeOptions = document.getElementById('month-fee-options');
+			const yearFeeOptions = document.getElementById('year-fee-options');
+
 			paymentToggleBtn.classList.toggle('toggle-btn--on');
 
 			if (paymentToggleBtn.classList.contains('toggle-btn--on')) {
 				monthlyPayment.checked = false;
 				yearlyPayment.checked = true;
+
+				monthFeeOptions.classList.remove('pricing__fee-options--selected');
+				yearFeeOptions.classList.add('pricing__fee-options--selected');
 			} else {
 				monthlyPayment.checked = true;
 				yearlyPayment.checked = false;
+
+				monthFeeOptions.classList.add('pricing__fee-options--selected');
+				yearFeeOptions.classList.remove('pricing__fee-options--selected');
 			}
 		}
 
 		if (e.target.id === 'monthly-payment-label') {
 			const paymentToggleBtn = document.getElementById('payment-period-toggle-btn');
 			paymentToggleBtn.classList.remove('toggle-btn--on');
+
+			const monthFeeOptions = document.getElementById('month-fee-options');
+			const yearFeeOptions = document.getElementById('year-fee-options');
+
+			monthFeeOptions.classList.add('pricing__fee-options--selected');
+			yearFeeOptions.classList.remove('pricing__fee-options--selected');
 		}
 
 		if (e.target.id === 'yearly-payment-label') {
 			const paymentToggleBtn = document.getElementById('payment-period-toggle-btn');
 			paymentToggleBtn.classList.add('toggle-btn--on');
+
+			const monthFeeOptions = document.getElementById('month-fee-options');
+			const yearFeeOptions = document.getElementById('year-fee-options');
+
+			monthFeeOptions.classList.remove('pricing__fee-options--selected');
+			yearFeeOptions.classList.add('pricing__fee-options--selected');
 		}
 
 	});

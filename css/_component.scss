@@ -348,16 +348,18 @@
 
 		.pricing__package-type-option {
 			appearance: none;
-			width: 1px;
-			height: 1px;
 		}
 	}
 
 
 	.pricing__fee-options {
-		display: flex;
+		display: none;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		&--selected {
+			display: flex;
+		}
 	}
 
 	.pricing__card {
