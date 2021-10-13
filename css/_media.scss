@@ -139,6 +139,18 @@
 		}
 	}
 
+	.pricing {
+		.pricing__payment-period-option-container {
+			width: 50%;
+		}
+
+		.toggle-btn {
+			position: relative;
+			top: 25px;
+			transform: rotate(90deg);
+		}
+	}
+
 	.testimonials {
 		.testimonials__header {
 

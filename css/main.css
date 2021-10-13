@@ -975,6 +975,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1002,6 +1004,7 @@ body {
   vertical-align: middle;
   padding: 7px 8px;
   border-radius: 8px;
+  white-space: nowrap;
 }
 
 .pricing .pricing__payment-type {
@@ -1358,7 +1361,7 @@ body {
 .toggle-btn {
   position: relative;
   cursor: pointer;
-  width: 93px;
+  min-width: 93px;
   height: 50px;
   margin: 0 15px;
   background-color: #B00000;
@@ -1493,6 +1496,15 @@ body {
   .hero .hero__btn {
     font-size: .7rem;
     padding: 15px 10px;
+  }
+  .pricing .pricing__payment-period-option-container {
+    width: 50%;
+  }
+  .pricing .toggle-btn {
+    position: relative;
+    top: 25px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .testimonials .testimonials__header--first {
     width: 100%;
