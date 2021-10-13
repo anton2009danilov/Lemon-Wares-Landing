@@ -95,7 +95,7 @@
 
 		.hero__content {
 			max-width: 90%;
-			margin: 0 auto;
+			margin-left: 5%;
 		}
 
 		.hero__btns-container {
@@ -108,8 +108,14 @@
 	}
 
 	.why-us {
+
+		.why-us__title {
+			font-size: 2.5rem;
+		}
+
 		.why-us__text-block {
-			width: 100%;
+			width: 90%;
+			margin: 0 auto;
 		}
 
 		.why-us__technologies {
@@ -169,6 +175,12 @@
 		.hero__btn {
 			font-size: .7rem;
 			padding: 15px 10px;
+		}
+	}
+
+	.why-us {
+		.why-us__tech-img {
+			width: 120px;
 		}
 	}
 
