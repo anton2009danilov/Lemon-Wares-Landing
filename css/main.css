@@ -1318,7 +1318,7 @@ body {
 }
 
 .call-to-action .call-to-action__content {
-  padding: 90px;
+  padding: 90px 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1342,6 +1342,7 @@ body {
 .call-to-action .call-to-action__btn {
   position: relative;
   font-size: 0.875rem;
+  height: 48px;
   padding: 2px 16px 2px 50px;
   color: #fff;
   background-color: #B00000;
@@ -1454,6 +1455,9 @@ body {
     width: 100%;
     margin: 0 auto;
   }
+  .call-to-action .call-to-action__title {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1470,6 +1474,9 @@ body {
   }
   .hero .hero__img {
     display: none;
+  }
+  .call-to-action .call-to-action__title {
+    font-size: 2.5rem;
   }
 }
 
@@ -1519,6 +1526,17 @@ body {
   .testimonials .testimonials__card {
     width: 95%;
     margin: 15px 0;
+  }
+  .call-to-action .call-to-action__bg-img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .call-to-action .call-to-action__content {
+    padding: 50px 10%;
+    min-height: 350px;
+  }
+  .call-to-action .call-to-action__title {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
