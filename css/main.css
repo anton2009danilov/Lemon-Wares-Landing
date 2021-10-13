@@ -972,12 +972,28 @@ body {
 }
 
 .pricing .pricing__payment-period {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 60px;
 }
 
 .pricing .pricing__payment-period-label {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.pricing .pricing__payment-period-option {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.pricing .pricing__payment-period-option:checked + label {
+  color: #B00000;
 }
 
 .pricing .pricing__discount {
@@ -1330,7 +1346,41 @@ body {
 }
 
 .toggle-btn {
+  position: relative;
   cursor: pointer;
+  width: 93px;
+  height: 50px;
+  margin: 0 15px;
+  background-color: #B00000;
+  border-radius: 73px;
+  border: none;
+}
+
+.toggle-btn:focus {
+  outline: 2px solid #969BAB;
+}
+
+.toggle-btn:hover {
+  -webkit-box-shadow: 0 0 10px 0px #B00000;
+          box-shadow: 0 0 10px 0px #B00000;
+}
+
+.toggle-btn::before {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: 10px;
+  top: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.toggle-btn--on::before {
+  left: 53px;
 }
 
 @media (max-width: 1240px) {

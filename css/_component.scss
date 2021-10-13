@@ -288,12 +288,22 @@
 	}
 
 	.pricing__payment-period {
+		display: flex;
+		align-items: center;
 		margin-bottom: 60px;
 	}
 
 	.pricing__payment-period-label {
 		font-size: 1.5rem;
 		cursor: pointer;
+	}
+
+	.pricing__payment-period-option {
+		appearance: none;
+
+		&:checked+label {
+			color: $red-color;
+		}
 	}
 
 	.pricing__discount {
@@ -608,5 +618,38 @@
 }
 
 .toggle-btn {
+	position: relative;
 	cursor: pointer;
+	width: 93px;
+	height: 50px;
+	margin: 0 15px;
+	background-color: $red-color;
+	border-radius: 73px;
+	border: none;
+
+
+	&:focus {
+		outline: 2px solid $grey-medium-color;
+	}
+
+	&:hover {
+		box-shadow: 0 0 10px 0px $red-color;
+	}
+
+	&::before {
+		display: block;
+		content: '';
+		position: absolute;
+		height: 30px;
+		width: 30px;
+		background-color: $primary-color;
+		border-radius: 50%;
+		left: 10px;
+		top: 10px;
+		transition: all .5s;
+	}
+
+	&--on::before {
+		left: 53px;
+	}
 }

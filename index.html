@@ -263,7 +263,6 @@
 					<h2 class="pricing__title">Ready to get started with Lemon Wares?</h2>
 					<p class="pricing__subtitle">Choose the package that suits you</p>
 					<div class="pricing__payment-period">
-						<label for="monthly-payment" class="pricing__payment-period-label">Monthly</label>
 						<input
 							type="radio"
 							name="payment-period"
@@ -272,13 +271,10 @@
 							class="pricing__payment-period-option"
 							checked
 						>
+						<label for="monthly-payment" class="pricing__payment-period-label" id="monthly-payment-label">Monthly</label>
 
-						<button class="toggle-btn" id="payment-period-toggle-btn">toggle</button>
+						<button class="toggle-btn" id="payment-period-toggle-btn"></button>
 
-						<label for="yearly-payment" class="pricing__payment-period-label">
-							Yearly
-							<span class="pricing__discount">20% dicount</span>
-						</label>
 						<input 
 							type="radio"
 							name="payment-period"
@@ -286,6 +282,10 @@
 							value="year"
 							class="pricing__payment-period-option"
 						>
+						<label for="yearly-payment" class="pricing__payment-period-label" id="yearly-payment-label">
+							Yearly
+							<span class="pricing__discount">20% dicount</span>
+						</label>
 					</div>
 
 					<div class="pricing__payment-type">
