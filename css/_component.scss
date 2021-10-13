@@ -55,6 +55,7 @@
 
 	.burger__link {
 		@extend .header__link;
+		padding: 12px 25px !important;
 	}
 }
 

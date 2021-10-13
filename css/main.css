@@ -692,6 +692,10 @@ body {
   z-index: 10;
 }
 
+.burger .burger__link {
+  padding: 12px 25px !important;
+}
+
 .hero {
   position: relative;
 }
