@@ -1046,6 +1046,14 @@ body {
           appearance: none;
 }
 
+.pricing .pricing__fee-options-container {
+  display: none;
+}
+
+.pricing .pricing__fee-options-container--selected {
+  display: block;
+}
+
 .pricing .pricing__fee-options {
   display: none;
   -webkit-box-pack: justify;

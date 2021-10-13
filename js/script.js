@@ -46,14 +46,14 @@ window.onload = () => {
 				monthlyPayment.checked = false;
 				yearlyPayment.checked = true;
 
-				monthFeeOptions.classList.remove('pricing__fee-options--selected');
-				yearFeeOptions.classList.add('pricing__fee-options--selected');
+				monthFeeOptions.classList.remove('pricing__fee-options-container--selected');
+				yearFeeOptions.classList.add('pricing__fee-options-container--selected');
 			} else {
 				monthlyPayment.checked = true;
 				yearlyPayment.checked = false;
 
-				monthFeeOptions.classList.add('pricing__fee-options--selected');
-				yearFeeOptions.classList.remove('pricing__fee-options--selected');
+				monthFeeOptions.classList.add('pricing__fee-options-container--selected');
+				yearFeeOptions.classList.remove('pricing__fee-options-container--selected');
 			}
 		}
 
@@ -64,8 +64,8 @@ window.onload = () => {
 			const monthFeeOptions = document.getElementById('month-fee-options');
 			const yearFeeOptions = document.getElementById('year-fee-options');
 
-			monthFeeOptions.classList.add('pricing__fee-options--selected');
-			yearFeeOptions.classList.remove('pricing__fee-options--selected');
+			monthFeeOptions.classList.add('pricing__fee-options-container--selected');
+			yearFeeOptions.classList.remove('pricing__fee-options-container--selected');
 		}
 
 		if (e.target.id === 'yearly-payment-label') {
@@ -75,8 +75,42 @@ window.onload = () => {
 			const monthFeeOptions = document.getElementById('month-fee-options');
 			const yearFeeOptions = document.getElementById('year-fee-options');
 
-			monthFeeOptions.classList.remove('pricing__fee-options--selected');
-			yearFeeOptions.classList.add('pricing__fee-options--selected');
+			monthFeeOptions.classList.remove('pricing__fee-options-container--selected');
+			yearFeeOptions.classList.add('pricing__fee-options-container--selected');
+		}
+
+		if (e.target.id === 'basic-package-label') {
+			const basicPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="basic"]');
+			const premiumPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="premium"]');
+
+			basicPaymentOptions.forEach(el => {
+				if (!el.classList.contains('pricing__fee-options--selected')) {
+					el.classList.add('pricing__fee-options--selected');
+				}
+			});
+
+			premiumPaymentOptions.forEach(el => {
+				if (el.classList.contains('pricing__fee-options--selected')) {
+					el.classList.remove('pricing__fee-options--selected');
+				}
+			});
+		}
+
+		if (e.target.id === 'premium-package-label') {
+			const basicPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="basic"]');
+			const premiumPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="premium"]');
+
+			basicPaymentOptions.forEach(el => {
+				if (el.classList.contains('pricing__fee-options--selected')) {
+					el.classList.remove('pricing__fee-options--selected');
+				}
+			});
+
+			premiumPaymentOptions.forEach(el => {
+				if (!el.classList.contains('pricing__fee-options--selected')) {
+					el.classList.add('pricing__fee-options--selected');
+				}
+			});
 		}
 
 	});

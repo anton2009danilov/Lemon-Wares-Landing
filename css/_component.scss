@@ -351,6 +351,13 @@
 		}
 	}
 
+	.pricing__fee-options-container {
+		display: none;
+
+		&--selected {
+			display: block;
+		}
+	}
 
 	.pricing__fee-options {
 		display: none;
