@@ -82,7 +82,7 @@
           transform: scale(0.99);
 }
 
-.header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before, .pricing .pricing__payment-type::before, .pricing .pricing__payment-type .pricing__payment-type-label:hover::before {
+.header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before, .pricing .pricing__payment-type::before, .pricing .pricing__payment-type .pricing__payment-type-label:hover::before, .pricing .pricing__payment-type .pricing__payment-type-label--selected::before {
   display: block;
   content: "";
   position: absolute;
@@ -1041,6 +1041,15 @@ body {
 .pricing .pricing__payment-type .pricing__payment-type-label:active {
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
+}
+
+.pricing .pricing__payment-type .pricing__payment-type-label--selected {
+  color: #B00000;
+}
+
+.pricing .pricing__payment-type .pricing__payment-type-label--selected::before {
+  height: 4px;
+  width: 100%;
 }
 
 .pricing .pricing__payment-type .pricing__package-type-option {

@@ -29,7 +29,6 @@ window.onload = () => {
 				linkedSlide.classList.toggle('hero__slide--active');
 			}
 
-
 		}
 
 		if (e.target.id === 'payment-period-toggle-btn') {
@@ -80,6 +79,14 @@ window.onload = () => {
 		}
 
 		if (e.target.id === 'basic-package-label') {
+			const basicPackageLabel = e.target;
+			const premiumPackageLabel = document.getElementById('premium-package-label');
+
+			if (!basicPackageLabel.classList.contains('pricing__payment-type-label--selected')) {
+				basicPackageLabel.classList.add('pricing__payment-type-label--selected');
+				premiumPackageLabel.classList.remove('pricing__payment-type-label--selected');
+			}
+
 			const basicPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="basic"]');
 			const premiumPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="premium"]');
 
@@ -97,6 +104,14 @@ window.onload = () => {
 		}
 
 		if (e.target.id === 'premium-package-label') {
+			const premiumPackageLabel = e.target;
+			const basicPackageLabel = document.getElementById('basic-package-label');
+
+			if (!premiumPackageLabel.classList.contains('pricing__payment-type-label--selected')) {
+				basicPackageLabel.classList.remove('pricing__payment-type-label--selected');
+				premiumPackageLabel.classList.add('pricing__payment-type-label--selected');
+			}
+
 			const basicPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="basic"]');
 			const premiumPaymentOptions = document.querySelectorAll('.pricing__fee-options[data-pricing-type="premium"]');
 

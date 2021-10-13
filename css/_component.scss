@@ -346,6 +346,16 @@
 			&:active {
 				transform: scale(.99);
 			}
+
+			&--selected {
+				color: $red-color;
+
+				&::before {
+					@extend %link-underline;
+					height: 4px;
+					width: 100%;
+				}
+			}
 		}
 
 		.pricing__package-type-option {
