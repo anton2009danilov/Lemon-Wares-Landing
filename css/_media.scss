@@ -107,6 +107,27 @@
 		}
 	}
 
+	.why-us {
+		.why-us__text-block {
+			width: 100%;
+		}
+
+		.why-us__technologies {
+			width: 100%;
+			justify-content: space-around;
+			margin-top: 30px;
+
+			.why-us__tech {
+				width: 50%;
+				height: 70px;
+			}
+		}
+
+		.why-us__card {
+			width: 50%;
+		}
+	}
+
 	.call-to-action {
 		.call-to-action__title {
 			font-size: 2.5rem;
