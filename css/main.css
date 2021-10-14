@@ -63,7 +63,7 @@
   src: url("../fonts/Inter/Inter-ExtraBold.ttf");
 }
 
-.header .header__link, .header .burger .burger__link, .burger .header .burger__link, .hero .hero__nav-link {
+.header .header__link, .header .burger .burger__link, .burger .header .burger__link, .footer .footer__link, .hero .hero__nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,9 +77,14 @@
   position: relative;
 }
 
-.header .header__link:active, .header .burger .burger__link:active, .burger .header .burger__link:active, .hero .hero__nav-link:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+.header .header__link:active, .header .burger .burger__link:active, .burger .header .burger__link:active, .footer .footer__link:active, .hero .hero__nav-link:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.header .header__link:hover, .header .burger .burger__link:hover, .burger .header .burger__link:hover, .footer .footer__link:hover, .hero .hero__nav-link:hover {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
 }
 
 .header .header__link:hover::before, .header .burger .burger__link:hover::before, .burger .header .burger__link:hover::before, .header .header__link--selected::before, .hero .hero__nav-list::before, .hero .hero__nav-link:hover::before, .hero .hero__nav-link--selected::before, .pricing .pricing__payment-type::before, .pricing .pricing__payment-type .pricing__payment-type-label:hover::before, .pricing .pricing__payment-type .pricing__payment-type-label--selected::before {

@@ -50,7 +50,11 @@ $cta-bg-color: #F7FAFE;
 	position: relative;
 
 	&:active {
-		transform: scale(.99);
+		transform: scale(.98);
+	}
+
+	&:hover {
+		filter: brightness(.8);
 	}
 }
 
