@@ -76,14 +76,17 @@
 		}
 
 		&--domain {
+			box-shadow: 0 0 20px 0 rgba(241, 116, 116, 0.2);
 			background-color: rgba(241, 116, 116, 0.1);
 		}
 
 		&--seo {
+			box-shadow: 0 0 20px 0 rgba(172, 250, 127, 0.2);
 			background-color: rgba(172, 250, 127, 0.1);
 		}
 
 		&--email {
+			box-shadow: 0 0 20px 0 rgba(129, 138, 252, 0.2);
 			background-color: rgba(129, 138, 252, 0.1);
 		}
 	}
