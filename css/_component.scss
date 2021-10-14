@@ -54,8 +54,14 @@
 	}
 
 	.burger__link {
-		@extend .header__link;
-		padding: 12px 25px !important;
+		@extend %link-style;
+		color: $secondary-color;
+
+		&:hover::before {
+			@extend %link-underline;
+		}
+
+		padding: 12px 25px;
 	}
 }
 
