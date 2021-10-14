@@ -167,6 +167,11 @@
 
 @media (max-width: 480px) {
 	.header {
+
+		.header__navigation {
+			min-height: min-content;
+		}
+
 		.header__nav-list {
 			flex-wrap: wrap;
 

@@ -1541,6 +1541,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .header .header__navigation {
+    min-height: -webkit-min-content;
+    min-height: -moz-min-content;
+    min-height: min-content;
+  }
   .header .header__nav-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
