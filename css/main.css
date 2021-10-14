@@ -1511,6 +1511,9 @@ body {
     font-size: 2.5rem;
     max-width: 470px;
   }
+  .hero .hero__subtitle {
+    padding-bottom: 0;
+  }
   .hero .hero__content {
     max-width: 90%;
     margin-left: 5%;
@@ -1593,19 +1596,25 @@ body {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  .testimonials .testimonials__header--first {
-    width: 100%;
-    margin-left: 0;
+  .testimonials .testimonials__header {
+    width: 90%;
+    margin: 0 auto;
   }
   .testimonials .testimonials__header--first::before {
-    left: 0;
+    left: -10px;
+    top: -32px;
+    width: 100px;
+    height: 85px;
   }
   .testimonials .testimonials__header .testimonials__title {
     font-size: 2.5rem;
   }
   .testimonials .testimonials__card {
     width: 95%;
-    margin: 15px 0;
+    margin: 0;
+    padding: 16px 16px 16px 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .call-to-action .call-to-action__bg-img {
     -webkit-transform: scale(0.7);

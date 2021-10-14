@@ -114,6 +114,10 @@
 			max-width: 470px;
 		}
 
+		.hero__subtitle {
+			padding-bottom: 0;
+		}
+
 		.hero__content {
 			max-width: 90%;
 			margin-left: 5%;
@@ -170,7 +174,6 @@
 	.footer {
 		.footer__links-block {
 			width: 35%;
-			// justify-content: space-evenly;
 		}
 	}
 }
@@ -237,13 +240,15 @@
 
 	.testimonials {
 		.testimonials__header {
+			width: 90%;
+			margin: 0 auto;
 
 			&--first {
-				width: 100%;
-				margin-left: 0;
-
 				&::before {
-					left: 0;
+					left: -10px;
+					top: -32px;
+					width: 100px;
+					height: 85px;
 				}
 			}
 
@@ -255,7 +260,9 @@
 
 		.testimonials__card {
 			width: 95%;
-			margin: 15px 0;
+			margin: 0;
+			padding: 16px 16px 16px 40px;
+			box-shadow: none;
 		}
 
 	}
