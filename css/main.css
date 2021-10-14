@@ -1452,6 +1452,9 @@ body {
   .hero .hero__title {
     font-size: 3rem;
   }
+  .pricing .pricing__title {
+    font-size: 3rem;
+  }
   .pricing .pricing__card {
     width: 52%;
     max-width: none;
@@ -1517,6 +1520,9 @@ body {
   }
   .hero .hero__img {
     display: none;
+  }
+  .pricing .pricing__title {
+    font-size: 2.5rem;
   }
   .why-us .why-us__title {
     font-size: 2.5rem;
