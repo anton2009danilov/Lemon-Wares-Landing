@@ -83,6 +83,23 @@
 			font-size: 3rem;
 		}
 	}
+
+	.footer {
+		.footer__about-company {
+			width: 100%;
+			display: flex;
+			max-width: none;
+
+			.footer__about-company-text {
+				margin: 0 auto;
+				padding: 0 5%;
+			}
+		}
+
+		.footer__content {
+			justify-content: space-evenly;
+		}
+	}
 }
 
 @media (max-width: 720px) {
@@ -137,6 +154,13 @@
 	.call-to-action {
 		.call-to-action__title {
 			font-size: 2.5rem;
+		}
+	}
+
+	.footer {
+		.footer__links-block {
+			width: 35%;
+			// justify-content: space-evenly;
 		}
 	}
 }
@@ -236,4 +260,26 @@
 		}
 	}
 
+	.footer {
+		padding: 64px 0px 40px;
+
+		.footer__about-company {
+			flex-wrap: wrap;
+		}
+
+		.footer__links-block {
+			width: 100%;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+
+			.footer__links-block-header {
+				width: 100%;
+			}
+
+			.footer__link {
+				width: 50%;
+			}
+		}
+	}
 }
