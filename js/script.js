@@ -2,68 +2,68 @@
 
 window.onload = () => {
 	document.body.addEventListener('click', (e) => {
-		listenToBurgerBtn(e);
-		listenToHeroSlider(e);
-		listenToPaymentToggleBtn(e);
-		listenToPaymentTypeLabel(e);
-		listenToPackageTypeLabel(e);
+
+		if (e.target.id === 'burger-btn' || e.target.parentNode.id === 'burger-btn') {
+			handleClickBurgerBtn(e);
+		} else if (e.target.classList.contains('hero__nav-link')) {
+			hanleClickHeroSlider(e);
+		} else if (e.target.id === 'payment-period-toggle-btn') {
+			hanleClickPaymentToggleBtn(e);
+		} else if (e.target.id === 'monthly-payment-label' || e.target.id === 'yearly-payment-label') {
+			hanleClickPaymentTypeLabel(e);
+		} else if (e.target.id === 'basic-package-label' || e.target.id === 'premium-package-label') {
+			hanleClickPackageTypeLabel(e);
+		}
 	});
 }
 
-function listenToBurgerBtn(e) {
+function handleClickBurgerBtn(e) {
 	const burgerMenu = document.getElementById('burger-menu');
+	burgerMenu.classList.toggle('d-none');
+}
 
-	if (e.target.id === 'burger-btn' || e.target.parentNode.id === 'burger-btn') {
-		burgerMenu.classList.toggle('d-none');
+function hanleClickHeroSlider(e) {
+	const targetLink = e.target;
+	const linkedSlide = document.getElementById(targetLink.dataset.slide);
+	const prevSelectedLink = document.getElementsByClassName('hero__nav-link--selected')[0];
+
+	prevSelectedLink.classList.toggle('hero__nav-link--selected');
+	targetLink.classList.toggle('hero__nav-link--selected');
+
+	if (!linkedSlide.classList.contains('hero__slide--active')) {
+		const prevSelectidSlide = document.getElementsByClassName('hero__slide--active')[0];
+		prevSelectidSlide.classList.toggle('hero__slide--active');
+		linkedSlide.classList.toggle('hero__slide--active');
 	}
 }
 
-function listenToHeroSlider(e) {
-	if (e.target.classList.contains('hero__nav-link')) {
-		const targetLink = e.target;
-		const linkedSlide = document.getElementById(targetLink.dataset.slide);
-		const prevSelectedLink = document.getElementsByClassName('hero__nav-link--selected')[0];
+function hanleClickPaymentToggleBtn(e) {
 
-		prevSelectedLink.classList.toggle('hero__nav-link--selected');
-		targetLink.classList.toggle('hero__nav-link--selected');
+	const paymentToggleBtn = e.target;
+	const monthlyPayment = document.getElementById('monthly-payment');
+	const yearlyPayment = document.getElementById('yearly-payment');
 
-		if (!linkedSlide.classList.contains('hero__slide--active')) {
-			const prevSelectidSlide = document.getElementsByClassName('hero__slide--active')[0];
-			prevSelectidSlide.classList.toggle('hero__slide--active');
-			linkedSlide.classList.toggle('hero__slide--active');
-		}
+	const monthFeeOptions = document.getElementById('month-fee-options');
+	const yearFeeOptions = document.getElementById('year-fee-options');
 
+	paymentToggleBtn.classList.toggle('toggle-btn--on');
+
+	if (paymentToggleBtn.classList.contains('toggle-btn--on')) {
+		monthlyPayment.checked = false;
+		yearlyPayment.checked = true;
+
+		monthFeeOptions.classList.remove('pricing__fee-options-container--selected');
+		yearFeeOptions.classList.add('pricing__fee-options-container--selected');
+	} else {
+		monthlyPayment.checked = true;
+		yearlyPayment.checked = false;
+
+		monthFeeOptions.classList.add('pricing__fee-options-container--selected');
+		yearFeeOptions.classList.remove('pricing__fee-options-container--selected');
 	}
 }
 
-function listenToPaymentToggleBtn(e) {
-	if (e.target.id === 'payment-period-toggle-btn') {
-		const paymentToggleBtn = e.target;
-		const monthlyPayment = document.getElementById('monthly-payment');
-		const yearlyPayment = document.getElementById('yearly-payment');
-
-		const monthFeeOptions = document.getElementById('month-fee-options');
-		const yearFeeOptions = document.getElementById('year-fee-options');
-
-		paymentToggleBtn.classList.toggle('toggle-btn--on');
-
-		if (paymentToggleBtn.classList.contains('toggle-btn--on')) {
-			monthlyPayment.checked = false;
-			yearlyPayment.checked = true;
-
-			monthFeeOptions.classList.remove('pricing__fee-options-container--selected');
-			yearFeeOptions.classList.add('pricing__fee-options-container--selected');
-		} else {
-			monthlyPayment.checked = true;
-			yearlyPayment.checked = false;
-
-			monthFeeOptions.classList.add('pricing__fee-options-container--selected');
-			yearFeeOptions.classList.remove('pricing__fee-options-container--selected');
-		}
-	}
-}
-
-function listenToPaymentTypeLabel(e) {
+function hanleClickPaymentTypeLabel(e) {
 	const paymentToggleBtn = document.getElementById('payment-period-toggle-btn');
 	const monthFeeOptions = document.getElementById('month-fee-options');
 	const yearFeeOptions = document.getElementById('year-fee-options');
@@ -83,7 +83,7 @@ function listenToPaymentTypeLabel(e) {
 	}
 }
 
-function listenToPackageTypeLabel(e) {
+function hanleClickPackageTypeLabel(e) {
 
 	const basicPackageLabel = document.getElementById('basic-package-label');
 	const premiumPackageLabel = document.getElementById('premium-package-label');
