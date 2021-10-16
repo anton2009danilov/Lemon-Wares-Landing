@@ -47,6 +47,10 @@ body {
 		height: 65px;
 		min-width: 25%;
 		white-space: nowrap;
+
+		&--hight-flex-order {
+			order: 2;
+		}
 	}
 
 	.header__list-item--small-screen {
