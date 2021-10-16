@@ -676,6 +676,7 @@ body {
   font-size: 2rem;
   background: #fff;
   cursor: pointer;
+  border: none;
 }
 
 .burger .burger__btn i {
@@ -683,8 +684,8 @@ body {
 }
 
 .burger .burger__btn:hover {
-  -webkit-filter: brightness(0.9);
-          filter: brightness(0.9);
+  -webkit-filter: brightness(0.95);
+          filter: brightness(0.95);
 }
 
 .burger .burger__btn:active {
@@ -701,6 +702,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  right: 0;
+  top: 70px;
   background: #FFFFFF;
   border: 1.5px solid #C4C4C4;
   -webkit-box-sizing: border-box;
@@ -1587,7 +1590,7 @@ body {
     display: none;
   }
   .burger .burger__menu {
-    right: 0;
+    top: 62px;
   }
   .hero .hero__btns-container {
     max-width: 280px;
