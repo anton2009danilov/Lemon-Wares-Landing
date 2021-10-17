@@ -212,10 +212,12 @@
 
 		.hero__btns-container {
 			max-width: 280px;
+			flex-direction: column;
 		}
 
 		.hero__btn {
-			font-size: .7rem;
+			margin: 10px;
+			font-size: 1rem;
 			padding: 15px 10px;
 		}
 	}
