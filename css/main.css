@@ -1652,6 +1652,9 @@ body {
   .call-to-action .call-to-action__title {
     font-size: 2rem;
   }
+  .call-to-action .call-to-action__btn {
+    font-size: 1rem;
+  }
   .footer {
     padding: 64px 0px 40px;
   }
