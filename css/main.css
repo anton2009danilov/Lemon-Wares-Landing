@@ -1602,6 +1602,12 @@ body {
   .why-us .why-us__tech-img {
     width: 120px;
   }
+  .why-us .why-us__card {
+    width: 100%;
+  }
+  .why-us .why-us__card .why-us__card-text {
+    font-size: 1rem;
+  }
   .pricing .pricing__payment-period-option-container {
     width: 50%;
   }
